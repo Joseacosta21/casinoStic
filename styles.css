@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif; /* Set the font family to Helvetica for the entire webpage */
+  }
+  body {
+    overflow-x: hidden;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the text color to white */
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradientto bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    mix-blend-mode: difference;
+  }
+  .navbar-brand {
+    padding-left: 10px;
+    font-size: 34px;
+    font-weight: bold;
+    color: white; /* Set initial color to white */
+  }
+  .navbar-subtext {
+    font-size: 12px;
+    margin-left: 10px;
+    color: white; /* Set initial color to white */
+  }
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar li {
+    padding-right: 15px;
+
+    font-size: large;
+    color: white; /* Set initial color to white */
+  }
+  .navbar li:hover {
+    text-decoration: underline;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .header {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  .text-overlay {
+    position: relative;
+    text-align: center; /* Align the overlay text to the center */
+    color: white; /* Set initial color to white */
+    z-index: 2;
+  }
+  .text-overlay h1 {
+    font-size: 78px;
+    margin-bottom: 20px;
+  }
+  .text-overlay p {
+    font-size: 34px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    padding: 30px; /* Add padding to the container if desired */
+    line-height: 1.5;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .container-white {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    padding: 30px; /* Add padding to the container if desired */
+    line-height: 1.5;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    padding: 30px; /* Add padding to the container if desired */
+    margin-top: 6%;
+    line-height: 1.5;
+    background-color: white;
+    color: black;
+    align-items: center;
+  }
+
+  .contact-column {
+    padding: 30px;
+    width: 60%;
+    font-size: large;
+  }
+
+  .form-column { 
+    background-color: white; /* Off-white color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+    padding: 20px; /* Adjust padding as needed */
+  }
+
+  .contact-column a {
+   color: black;
+   text-decoration: none;
+   justify-content: start;
+  }
+
+  .contact-column a:hover {
+    text-decoration: underline;
+  }
+
+  .column {
+    width: 48%; /* Adjust the width of the columns as needed */
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .bigtext {
+    font-size: 400%;
+    padding: 5%;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  .list_desc {
+    font-size: 200%;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-right: 5%;
+  }
+  /* Add this to your CSS file */
+
+.contact-us-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bottom-social-media-icons, 
+.social-media-icons {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navega {
+  list-style-type: none;
+  color: grey;
+
+}
+
+
+a .navega {
+  color: grey;
+}
+
+
+
+.answer {
+  display: none;
+}
+
+.bottom-social-media-icons li, 
+.social-media-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.foto-casino-stic { 
+  width: 50%;
+}
+
+.FAQs {
+  background-color: white;
+  margin-top: 6%;
+  color: black;
+  padding: 10px;
+}
+
+.FAQbox {
+  margin: 20px;
+  background-color: lightgrey;
+  padding: 5px 10px 5px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+  border-radius: 10px;
+  line-height: 2;
+  
+}
+
+.FAQbox:hover {
+  cursor: pointer;
+}
+
+.social-media-icons a {
+  text-decoration: none;
+  color: currentColor; /* Change color as needed */
+}
+
+.sobre-nosotros {
+  padding: 35px;
+  background-color: white;
+  color: black;
+  margin-top: 6%;
+  line-height: 1.5;
+}
+
+.bottom-social-media-icons a {
+  font-size: 150%;
+}
+
+.social-media-icons i {
+  font-size: 30px;
+}
+
+hr {
+  margin: 15px 2px 15px 2px;
+}
+
+.map-container {
+  width: 100%;
+  height: 400px; /* Set a fixed or percentage-based height */
+}
+
+  /* Ensure the iframe takes 100% width and height of its parent container */
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0; /* Remove iframe border */
+    
+  }
+
+  iframe { 
+    border-radius: 20px;
+  }
+
+  .submit {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 5px;
+  }
+
+  .logo {
+    background-color: transparent;
+    width: 100%;
+  }
+
+  /* Add this to your CSS file */
+.sub-navbar {
+  background-color: #eee;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: none;
+  transition: top 0.3s;
+}
+
+.sub-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.sub-navbar li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.sub-navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.sub-navbar.show {
+  top: -40px; /* Adjust the height of your sub-navbar */
+}
+
+  .submit:hover {
+    background-color: #96ffab;
+    color: black;
+    border: 1px solid black;
+
+    cursor: pointer;
+  }
+
+  .faq-question {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+  .carrousel {
+    width: 48%; /* Adjust the width of the columns as needed */
+    text-align: center;
+    background-color: #FAF9F6;
+    color: black;
+    line-height: 1.5;
+    border-radius: 30px; /* Adjust the radius as needed */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Shadow */
+    margin: 2%;
+    padding: 2%;
+  }
+
+  .contactform {
+    padding: 2%;
+    justify-items: space-between;
+  }
+
+  label {
+    padding: 2%;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+
+  }
+
+  input,
+  textarea {
+    padding: 2%;
+    margin: 1%;
+    font-size: 100%;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+    resize: none;
+    font-weight: bold;
+}
+  
+  .container-footer {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    padding: 30px; /* Add padding to the container if desired */
+    line-height: 1.7;
+    text-align: left;
+    align-items: start;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .patrocinadores {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+    background-color: white;
+    color: black;
+    margin: 20px 0px 20px 0px;
+    padding: 20px;
+  }
+
+  .arrow {
+    float: right; /* Align the arrow to the right */
+}
+
+
+  .column-footer {
+    width: 48%; /* Adjust the width of the columns as needed */
+    padding-left: 2%;
+    line-height: 1.7;
+  }
+
+  .no-bullets {
+    list-style-type: none;
+  }
+
+  .column-footer:last-child {
+    border-left: 1px solid white; /* Remove border for the last div */
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    line-height: 2.5;
+  
+  }
+
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
