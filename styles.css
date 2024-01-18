@@ -6,8 +6,9 @@
   }
   body {
     overflow-x: hidden;
-    background-color: black; /* Set the background color to black */
-    color: white; /* Set the text color to white */
+    background-color: #FFF5EA; 
+    color: black; /* Set the text color to white */
+
   }
   .navbar {
     position: fixed;
@@ -103,6 +104,9 @@
     align-items: center;
     justify-items: center;
     justify-content: center;
+    background-color: black; 
+    color: white;
+    ;
   }
 
   .container-white {
@@ -138,6 +142,10 @@
     background-color: white; /* Off-white color */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
     padding: 20px; /* Adjust padding as needed */
+  }
+
+  .text { 
+    padding: 40px;
   }
 
   .contact-column a {
@@ -322,7 +330,7 @@ hr {
     background-color: #96ffab;
     color: black;
     border: 1px solid black;
-
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
     cursor: pointer;
   }
 
@@ -395,6 +403,7 @@ hr {
     color: black;
     margin: 20px 0px 20px 0px;
     padding: 20px;
+    text-align: center;
   }
 
   .arrow {
