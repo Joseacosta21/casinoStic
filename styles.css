@@ -6,7 +6,7 @@
 }
 body {
   overflow-x: hidden;
-  background-color: #fff5ea;
+  background-color: #F8F7F4;
   color: black; /* Set the text color to white */
 }
 .navbar {
@@ -16,11 +16,12 @@ body {
   width: 100%;
   padding: 20px;
   display: flex;
-  
   justify-content: space-between;
   align-items: center;
   z-index: 3;
-  mix-blend-mode: difference;
+  background-color: black;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow */
+
 }
 .navbar-brand {
   padding-left: 10px;
@@ -50,10 +51,9 @@ body {
   text-decoration: none;
   color: inherit;
 }
-.header {
+. header {
   height: 100vh;
   position: relative;
-  background-color: black;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -103,11 +103,9 @@ body {
   align-items: center;
   justify-items: center;
   justify-content: center;
-  background-color: black;
-  color: white;
 }
 
-.container-white {
+.container-black {
   display: flex;
   justify-content: space-around; /* Adjust as needed */
   padding: 30px; /* Add padding to the container if desired */
@@ -115,8 +113,8 @@ body {
   align-items: center;
   justify-items: center;
   justify-content: center;
-  background-color: white;
-  color: black;
+  color: white;
+  background-color: black;
 }
 
 .contact-container {
@@ -141,6 +139,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
   padding: 20px; /* Adjust padding as needed */
   border-radius: 20px;
+  height: 100%;
 }
 
 .text {
@@ -322,7 +321,7 @@ iframe {
 .submit:hover {
   background-color: #96ffab;
   color: black;
-  border: 1px solid black;
+  border: none;
   box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
   cursor: pointer;
 }
@@ -353,6 +352,7 @@ iframe {
 .contactform {
   padding: 2%;
   justify-items: space-between;
+  height: 300px;
 }
 
 label {
