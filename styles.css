@@ -52,7 +52,7 @@ body {
   text-decoration: none;
   color: inherit;
 }
-. header {
+.header {
   height: 100vh;
   position: relative;
   overflow: hidden;
