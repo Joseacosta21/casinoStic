@@ -99,11 +99,11 @@ body {
 .container {
   display: flex;
   justify-content: space-around; /* Adjust as needed */
-  padding: 30px; /* Add padding to the container if desired */
+  padding: 40px; /* Add padding to the container if desired */
   line-height: 1.5;
   align-items: center;
   justify-items: center;
-  justify-content: center;
+  
 }
 
 .container-black {
@@ -158,7 +158,7 @@ body {
 
 .column {
   width: 48%; /* Adjust the width of the columns as needed */
-  text-align: center;
+  text-align: left;
   line-height: 1.5;
 }
 
