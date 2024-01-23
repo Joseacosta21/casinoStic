@@ -212,14 +212,11 @@ a .navega {
 }
 
 .FAQs {
-  background-color: white;
-  margin-top: 6%;
-  color: black;
   padding: 10px;
 }
 
 .FAQbox {
-  margin: 20px;
+  margin: 30px;
   background-color: lightgrey;
   padding: 5px 10px 5px 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
