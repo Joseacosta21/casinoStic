@@ -118,16 +118,6 @@ body {
   background-color: black;
 }
 
-.contact-container {
-  display: flex;
-  justify-content: space-around; /* Adjust as needed */
-  padding: 30px; /* Add padding to the container if desired */
-  line-height: 1.5;
-  background-color: white;
-  color: black;
-  align-items: center;
-}
-
 .contact-column {
   padding: 30px;
   width: 60%;
@@ -144,6 +134,7 @@ body {
 
 .text {
   padding: 40px;
+  line-height: 1.7;
 }
 
 .contact-column a {
@@ -199,6 +190,8 @@ a .navega {
 
 .answer {
   display: none;
+  padding: 0px 10px;
+  transition: ease 0.3s;
 }
 
 .bottom-social-media-icons li,
@@ -220,7 +213,7 @@ a .navega {
   background-color: lightgrey;
   padding: 5px 10px 5px 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
-  border-radius: 10px;
+  border-radius: 20px;
   line-height: 2;
 }
 
@@ -275,6 +268,8 @@ iframe {
   color: grey;
   border: 1px solid grey;
   border-radius: 5px;
+  transition: ease 0.4s;
+
 }
 
 .logo {
@@ -324,11 +319,10 @@ iframe {
 }
 
 .faq-question {
+  font-weight: bold;
   cursor: pointer;
   padding: 10px;
-  border: 1px solid #ccc;
   border-radius: 5px;
-  margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
