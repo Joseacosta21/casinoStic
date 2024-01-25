@@ -173,10 +173,10 @@ body {
   margin-top: 20px;
 }
 
-.bottom-social-media-icons,
 .social-media-icons {
   list-style-type: none;
   padding: 0;
+  size: 100%;
 }
 
 .navega {
@@ -194,7 +194,6 @@ a .navega {
   transition: ease 0.3s;
 }
 
-.bottom-social-media-icons li,
 .social-media-icons li {
   display: inline-block;
   margin-right: 10px;
@@ -232,10 +231,6 @@ a .navega {
   color: black;
   margin-top: 6%;
   line-height: 1.5;
-}
-
-.bottom-social-media-icons a {
-  font-size: 150%;
 }
 
 .social-media-icons i {
@@ -395,9 +390,9 @@ textarea {
 }
 
 .column-footer {
-  width: 48%; /* Adjust the width of the columns as needed */
-  padding-left: 2%;
-  line-height: 1.7;
+  width: 20%; /* Adjust the width of the columns as needed */
+  line-height: 2.5;
+  padding-left: 50px;
 }
 
 .no-bullets {
