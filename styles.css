@@ -5,6 +5,18 @@
   font-family: Helvetica, Arial, sans-serif; /* Set the font family to Helvetica for the entire webpage */
 }
 
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
 body {
   overflow-x: hidden;
   background-color: #f8f7f4;
@@ -72,7 +84,7 @@ a:hover {
   color: white; /* Set initial color to white */
 }
 
-.header {
+.video-header {
   height: 100vh;
   position: relative;
   overflow: hidden;
@@ -136,13 +148,13 @@ a:hover {
 }
 
 .text {
-  padding: 0px 60px 0px 60px;
+  padding: 40px 60px 0px 60px;
   line-height: 1.7;
 }
 
 .column {
   width: 50%; /* Adjust the width of the columns as needed */
-  text-align: left;
+  text-align: justify;
   line-height: 1.5;
   padding: 0px 20px 0px 20px;
 }
@@ -162,23 +174,9 @@ a:hover {
 }
 /* Add this to your CSS file */
 
-.contact-us-section {
-  text-align: center;
-  margin-top: 20px;
-}
-
 .social-media-icons {
   list-style-type: none;
   padding: 0;
-}
-
-.navega {
-  list-style-type: none;
-  color: grey;
-}
-
-a .navega {
-  color: grey;
 }
 
 .answer {
@@ -197,7 +195,7 @@ a .navega {
 }
 
 .FAQbox {
-  margin: 0px 30px 30px 30px;
+  margin: 30px 55px 0px 55px;
   background-color: lightgrey;
   padding: 5px 10px 5px 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
@@ -275,9 +273,6 @@ iframe {
 .sub-navbar li {
   display: inline-block;
   margin-right: 3rem;
-}
-
-.sub-navbar a {
   color: #333;
   font-weight: bold;
 }
@@ -290,7 +285,6 @@ iframe {
 .submit:hover {
   background-color: white;
   color: #1666d9;
-  border: none;
   box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
   cursor: pointer;
   border: 1px solid #1666d9;
@@ -368,10 +362,6 @@ textarea {
   margin: 20px 0px 20px 0px;
   padding: 20px;
   text-align: center;
-}
-
-.arrow {
-  float: right; /* Align the arrow to the right */
 }
 
 .column-footer {
