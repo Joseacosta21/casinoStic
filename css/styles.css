@@ -291,8 +291,8 @@ iframe {
   line-height: 1.5;
   border-radius: 30px; /* Adjust the radius as needed */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Shadow */
-  margin: 2%;
-  padding: 2%;
+  margin: 0rem 2rem 0rem 2rem;
+  padding: 2rem;
 }
 
 .contactform {
