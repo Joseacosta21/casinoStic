@@ -115,9 +115,6 @@ a:hover {
   justify-content: space-around; /* Adjust as needed */
   padding: 30px; /* Add padding to the container if desired */
   line-height: 1.5;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
   color: white;
   background-color: black;
 }
@@ -183,12 +180,8 @@ a .navega {
   width: 50%;
 }
 
-.FAQs {
-  padding: 10px;
-}
-
 .FAQbox {
-  margin: 30px;
+  margin: 0px 30px 30px 30px;
   background-color: lightgrey;
   padding: 5px 10px 5px 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
