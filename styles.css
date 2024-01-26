@@ -136,7 +136,7 @@ a:hover {
 }
 
 .text {
-  padding: 40px 60px 0px 60px;
+  padding: 0px 60px 0px 60px;
   line-height: 1.7;
 }
 
@@ -144,7 +144,7 @@ a:hover {
   width: 50%; /* Adjust the width of the columns as needed */
   text-align: left;
   line-height: 1.5;
-  padding: 20px;
+  padding: 0px 20px 0px 20px;
 }
 
 .bigtext {
@@ -193,7 +193,7 @@ a .navega {
 }
 
 .foto-casino-stic {
-  width: 50%;
+  width: 30rem;
 }
 
 .FAQbox {
@@ -264,18 +264,17 @@ iframe {
   position: relative;
   width: 100%;
   transition: top 0.3s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow */
 }
 
 .sub-navbar ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   text-align: center;
 }
 
 .sub-navbar li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 3rem;
 }
 
 .sub-navbar a {
@@ -390,6 +389,7 @@ textarea {
 }
 
 footer {
+  margin-top: 2rem;
   background-color: black;
   color: white;
   padding: 20px;
