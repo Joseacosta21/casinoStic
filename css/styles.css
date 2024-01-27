@@ -143,16 +143,15 @@ a:hover {
 
 .bigtext {
   font-size: 400%;
-  padding: 5%;
+  padding: 1rem;
   font-weight: bold;
   line-height: 1.2;
 }
 
 .list_desc {
   font-size: 200%;
-  padding-left: 10%;
-  padding-top: 5%;
-  padding-right: 5%;
+  padding-left: 4rem;
+  padding-top: 1rem;
 }
 
 .social-media-icons {
@@ -218,7 +217,7 @@ hr {
 }
 
 iframe {
-  border-radius: 20px;
+  border-radius: 2rem;
 }
 
 .submit {
