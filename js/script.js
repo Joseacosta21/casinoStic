@@ -1,10 +1,25 @@
 // script.js
 
+// Event listener for submit button 
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent the default form submission
+    handleFormSubmission();
+});
 
+// Add event listener for "keydown" on the form
+document.getElementById('contactForm').addEventListener('keydown', function (event) {
+    // Check if the key pressed is "Enter"
+    if (event.key === 'Enter') {
+        // Prevent the default form submission
+        event.preventDefault();
+        handleFormSubmission();
+    }
+});
+
+// Form submission function
+function handleFormSubmission() {
     // Collect form data
-    const formData = new FormData(event.target);
+    const formData = new FormData(document.getElementById('contactForm'));
     const data = {};
     formData.forEach((value, key) => {
         data[key] = value;
@@ -19,22 +34,24 @@ document.getElementById('contactForm').addEventListener('submit', function (even
             console.log("Email sent:", response);
 
             var button = document.getElementById('submitButton');
-            
-            button.value = 'Enviado'; // Change text to enviado
+
+            button.value = 'Enviado'; // Change text to Enviado
             button.disabled = true; // Optionally disable the button after clicking
-            button.style.cursor = 'not-allowed'; // Cursos
+            button.style.cursor = 'not-allowed'; // Cursor
             button.style.backgroundColor = 'lightgrey';
             button.style.color = 'grey';
             button.style.borderColor = 'grey';
             button.style.boxShadow = 'none';
             console.log("Button text updated to 'Enviado'");
-            
+
         }, function (error) {
             console.error("Email send failed:", error);
             // Handle errors here
         });
-});
+}
 
+
+// FAQs revealing feature
 function toggleAnswer(id) {
     var answer = document.getElementById(id);
     var arrow = document.getElementById('arrow-' + id);
@@ -49,6 +66,7 @@ function toggleAnswer(id) {
 }
 
 // Subnavbar for Sobre Nosotros 
+// TODO 
 
 // Add this to your existing JavaScript file
 document.addEventListener("DOMContentLoaded", function () {
