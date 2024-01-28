@@ -1,3 +1,5 @@
+/* Main stuff/stuff that is everywhere*/
+
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +35,58 @@ a:hover {
   text-decoration: underline;
 }
 
+.text {
+  padding: 40px 60px 0px 60px;
+  line-height: 1.7;
+}
+
+.social-media-icons {
+  list-style-type: none;
+  padding: 0;
+}
+
+.carrousel {
+  width: 48%; /* Adjust the width of the columns as needed */
+  text-align: center;
+  background-color: #faf9f6;
+  color: black;
+  line-height: 1.5;
+  border-radius: 30px; /* Adjust the radius as needed */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Shadow */
+  margin: 0rem 2rem 0rem 2rem;
+  padding: 2rem;
+}
+
+.social-media-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.patrocinadores {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+  background-color: white;
+  color: black;
+  margin: 20px 0px 20px 0px;
+  padding: 20px;
+  text-align: center;
+}
+
+hr {
+  margin: 15px 2px 15px 2px;
+}
+
+iframe {
+  border-radius: 2rem;
+}
+
+.logo {
+  background-color: transparent;
+  width: 100%;
+}
+
+/* Navbar and sub-navbar*/
+
 .navbar {
   position: fixed;
   top: 0;
@@ -46,17 +100,20 @@ a:hover {
   background-color: black;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow */
 }
+
 .navbar-brand {
   padding-left: 10px;
   font-size: 34px;
   font-weight: bold;
   color: white; /* Set initial color to white */
 }
+
 .navbar-subtext {
   font-size: 12px;
   margin-left: 10px;
   color: white; /* Set initial color to white */
 }
+
 .navbar ul {
   list-style-type: none;
   display: flex;
@@ -69,175 +126,6 @@ a:hover {
   color: white; /* Set initial color to white */
 }
 
-.video-header {
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0px;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-.text-overlay {
-  position: relative;
-  text-align: center; /* Align the overlay text to the center */
-  color: white; /* Set initial color to white */
-  z-index: 2;
-}
-.text-overlay h1 {
-  font-size: 78px;
-  margin-bottom: 20px;
-}
-
-.text-overlay p {
-  font-size: 34px;
-}
-
-.container-black,
-.container {
-  display: flex;
-  justify-content: space-around;
-  padding: 40px 40px 0px 40px;
-  line-height: 1.5;
-  align-items: center;
-  justify-items: center;
-}
-
-.container-black {
-  color: white;
-  background-color: black;
-}
-
-.text {
-  padding: 40px 60px 0px 60px;
-  line-height: 1.7;
-}
-
-.column {
-  width: 41rem;
-  text-align: justify;
-  line-height: 1.5;
-  padding: 0px 20px 0px 20px;
-}
-
-.bigtext {
-  font-size: 400%;
-  padding: 1rem;
-  font-weight: bold;
-  line-height: 1.2;
-}
-
-.list_desc {
-  font-size: 200%;
-  padding-left: 4rem;
-  padding-top: 1rem;
-}
-
-.social-media-icons {
-  list-style-type: none;
-  padding: 0;
-}
-
-.answer {
-  display: none;
-  padding: 0px 10px;
-  transition: ease 0.3s;
-}
-
-.social-media-icons li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.foto-casino-stic {
-  width: 30rem;
-}
-
-.FAQbox {
-  margin: 30px 55px 0px 55px;
-  background-color: lightgrey;
-  padding: 5px 10px 5px 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
-  border-radius: 20px;
-  line-height: 2;
-}
-
-.FAQbox:hover {
-  cursor: pointer;
-}
-
-.sobre-nosotros {
-  padding: 35px;
-  background-color: white;
-  color: black;
-  margin-top: 6%;
-  line-height: 1.5;
-}
-
-.social-media-icons i {
-  padding-top: 10px;
-  font-size: 25px;
-}
-
-hr {
-  margin: 15px 2px 15px 2px;
-}
-
-.map-container {
-  width: 100%;
-  height: 400px; /* Set a fixed or percentage-based height */
-}
-
-/* Ensure the iframe takes 100% width and height of its parent container */
-.map-container iframe {
-  width: 100%;
-  height: 100%;
-  border: 0; /* Remove iframe border */
-}
-
-iframe {
-  border-radius: 2rem;
-}
-
-.submit {
-  background-color: #1666d9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
-  color: white;
-  border: 1px solid white;
-  border-radius: 1rem;
-  transition: ease 0.4s;
-  font-weight: bold;
-}
-
-.logo {
-  background-color: transparent;
-  width: 100%;
-}
-
-/* Add this to your CSS file */
 .sub-navbar {
   background-color: #eee;
   padding: 20px;
@@ -259,73 +147,7 @@ iframe {
   font-weight: bold;
 }
 
-/*
-.sub-navbar.show {
-  /* Actually do this shi 
-  top: -40px;  Adjust the height of your sub-navbar 
-}s
-*/
-
-.submit:hover {
-  background-color: white;
-  color: #1666d9;
-  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
-  cursor: pointer;
-  border: 1px solid #1666d9;
-}
-
-.faq-question {
-  font-weight: bold;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.carrousel {
-  width: 48%; /* Adjust the width of the columns as needed */
-  text-align: center;
-  background-color: #faf9f6;
-  color: black;
-  line-height: 1.5;
-  border-radius: 30px; /* Adjust the radius as needed */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Shadow */
-  margin: 0rem 2rem 0rem 2rem;
-  padding: 2rem;
-}
-
-.contactform {
-  justify-items: space-between;
-  background-color: white; /* Off-white color */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
-  padding: 20px; /* Adjust padding as needed */
-  border-radius: 20px;
-}
-
-label {
-  padding: 2%;
-  display: block;
-  margin-bottom: 5px;
-  color: #333;
-}
-
-input,
-textarea {
-  padding: 2%;
-  margin: 1%;
-  font-size: 100%;
-  width: 100%;
-  padding: 8px;
-  border: 1px solid black;
-  border-radius: 10px;
-  resize: none;
-}
-
-textarea {
-  height: 100px;
-}
+/* Footer */
 
 .container-footer {
   display: flex;
@@ -336,16 +158,6 @@ textarea {
   align-items: start;
   justify-items: center;
   justify-content: center;
-}
-
-.patrocinadores {
-  width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
-  background-color: white;
-  color: black;
-  margin: 20px 0px 20px 0px;
-  padding: 20px;
-  text-align: center;
 }
 
 .column-footer {
@@ -369,4 +181,215 @@ footer {
   padding: 20px;
   text-align: center;
   line-height: 2.5;
+}
+
+/* Containers and Columns */
+
+.container-black,
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 40px 0px 40px;
+  line-height: 1.5;
+  align-items: center;
+  justify-items: center;
+}
+
+.container-black {
+  color: white;
+  background-color: black;
+}
+
+.column {
+  width: 41rem;
+  text-align: justify;
+  line-height: 1.5;
+  padding: 0px 20px 0px 20px;
+}
+
+/* Index */
+
+.video-header {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.text-overlay {
+  position: relative;
+  text-align: center; /* Align the overlay text to the center */
+  color: white; /* Set initial color to white */
+  z-index: 2;
+}
+
+.text-overlay h1 {
+  font-size: 78px;
+  margin-bottom: 20px;
+}
+
+.text-overlay p {
+  font-size: 34px;
+}
+
+.bigtext {
+  font-size: 400%;
+  padding: 1rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.list_desc {
+  font-size: 200%;
+  padding-left: 4rem;
+  padding-top: 1rem;
+}
+
+.map-container {
+  width: 100%;
+  height: 400px; /* Set a fixed or percentage-based height */
+}
+
+.foto-casino-stic {
+  width: 30rem;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0; /* Remove iframe border */
+}
+
+/* Abt. us */
+
+.sobre-nosotros {
+  padding: 35px;
+  background-color: white;
+  color: black;
+  margin-top: 6%;
+  line-height: 1.5;
+}
+
+.social-media-icons i {
+  padding-top: 10px;
+  font-size: 25px;
+}
+
+/*
+.sub-navbar.show {
+  /* Actually do this shi 
+  top: -40px;  Adjust the height of your sub-navbar 
+}s
+*/
+
+/* Contactanos */
+
+.submit:hover {
+  background-color: white;
+  color: #1666d9;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+  cursor: pointer;
+  border: 1px solid #1666d9;
+}
+
+input,
+textarea {
+  padding: 2%;
+  margin: 1%;
+  font-size: 100%;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 10px;
+  resize: none;
+}
+
+textarea {
+  height: 100px;
+}
+
+.contactform {
+  justify-items: space-between;
+  background-color: white; /* Off-white color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 20px;
+}
+
+.submit {
+  background-color: #1666d9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+  color: white;
+  border: 1px solid white;
+  border-radius: 1rem;
+  transition: ease 0.4s;
+  font-weight: bold;
+}
+
+/* Wtf */
+
+label {
+  padding: 2%;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* FAQs */
+
+.answer {
+  display: none;
+  padding: 0px 10px;
+  transition: ease 0.3s;
+}
+
+.faq-question {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.FAQbox {
+  margin: 30px 55px 0px 55px;
+  background-color: lightgrey;
+  padding: 5px 10px 5px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+  border-radius: 20px;
+  line-height: 2;
+}
+
+.FAQbox:hover {
+  cursor: pointer;
 }
