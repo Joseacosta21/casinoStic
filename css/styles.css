@@ -85,10 +85,12 @@ a:hover {
   height: 100%;
   z-index: -1;
 }
+
 .video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 0px;
 }
 .overlay {
   position: absolute;
@@ -357,7 +359,7 @@ textarea {
 }
 
 .column-footer:last-child {
-  border-left: 1px solid white; /* Remove border for the last div */
+  border-left: 1px solid grey; /* Remove border for the last div */
 }
 
 footer {

@@ -65,6 +65,15 @@ function toggleAnswer(id) {
     }
 }
 
+// Video JS 
+// Pause the video initially (autoplay will start it)
+document.getElementById('myVideo').pause();
+
+// Play the video on click
+document.getElementById('myVideo').addEventListener('click', function() {
+  this.play();
+});
+
 // Subnavbar for Sobre Nosotros 
 // TODO 
 
