@@ -24,6 +24,8 @@ body {
   background-color: #f8f7f4;
   color: black; /* Set the text color to white */
   margin-top: 90px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 a {
@@ -74,14 +76,8 @@ a:hover {
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-.example::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.example {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
 }
 
 hr {
