@@ -20,7 +20,7 @@ h2 {
 }
 
 body {
-  overflow-x: hidden;
+  overflow: hidden; /* Hide scrollbars */
   background-color: #f8f7f4;
   color: black; /* Set the text color to white */
   margin-top: 90px;
