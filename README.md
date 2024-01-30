@@ -1,5 +1,7 @@
 Basic Landing page made using HTML, CSS and JS
 
+Webpage: casinostic.com
+
 "Contact us" section works using mail.js services
 
 Chat GPT helped with different formatting options in CSS, and functions in JS.
@@ -10,4 +12,5 @@ Events and Tournaments section
 
 Gallery
 
-Etc... 
+Dynamic Formatting for mobile device usage. 
+
