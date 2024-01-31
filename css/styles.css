@@ -401,3 +401,35 @@ label {
 .FAQbox:hover {
   cursor: pointer;
 }
+
+/* Dynamic thingy? */
+
+/* Add this media query at the end of your CSS */
+@media (max-width: 800px) {
+  .container,
+  .container-footer,
+  .container-black {
+    flex-direction: column; /* Stack columns on top of each other */
+  }
+
+  .carrousel {
+    width: 100%; /* Adjust the width of the columns for smaller screens */
+    margin-bottom: 2rem;
+  }
+
+  .column {
+    width: 100%; /* Adjust the width of the columns for smaller screens */
+    margin-bottom: 2rem;
+  }
+
+  .column-footer {
+    width: 100%;
+    padding-left: 1rem;
+  }
+
+  .column-footer:last-child {
+    border-left: none;
+    border-bottom: 1px solid grey;
+    padding-bottom: 2rem;
+  }
+}
