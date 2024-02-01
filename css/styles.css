@@ -126,6 +126,7 @@ iframe {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
+  flex-grow: 1; /* Grow to take available space */
 }
 
 .navbar li {
@@ -153,6 +154,32 @@ iframe {
   margin-right: 3rem;
   color: #333;
   font-weight: bold;
+}
+
+.burger-menu {
+  display: none; /* Initially hide the burger menu button */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.nav-links-container {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.navbar ul.show {
+  display: block; /* Show the ul when the show class is present */
 }
 
 /* Footer */
@@ -412,6 +439,11 @@ label {
     flex-direction: column; /* Stack columns on top of each other */
   }
 
+  iframe {
+    margin-top: 2rem;
+    height: 20rem;
+  }
+
   .carrousel {
     width: 100%; /* Adjust the width of the columns for smaller screens */
     margin-bottom: 2rem;
@@ -431,5 +463,27 @@ label {
     border-left: none;
     border-bottom: 1px solid grey;
     padding-bottom: 2rem;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    padding: 2rem 0rem 1rem 2rem;
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .navbar li {
+    padding: 1rem 0;
+  }
+
+  .burger-menu {
+    display: block; /* Show the burger menu button on small screens */
   }
 }

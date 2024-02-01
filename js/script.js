@@ -95,6 +95,33 @@ document.addEventListener("DOMContentLoaded", function () {
     };
   });
 
+  // Dynamic Burger style navbar
+  function toggleMenu() {
+    const navLinks = document.querySelector('.navbar ul');
+    navLinks.classList.toggle('show');
+
+    const navbar = document.querySelector('.navbar');
+
+    // Weird thing
+    // navbar.style.position = (navbar.style.position === 'fixed') ? 'absolute' : 'fixed';
+
+
+    // Check the current mix blend mode and toggle it
+    navbar.style.mixBlendMode = (navbar.style.mixBlendMode === 'normal') ? 'inherit' : 'normal';
+
+    // Check the current background color and toggle it
+    navbar.style.backgroundColor = (navbar.style.backgroundColor === 'rgba(0, 0, 0, 0.7)') ? 'inherit' : 'rgba(0, 0, 0, 0.7)';
+
+ }
+  
+  // Close the menu when a link is clicked (optional)
+  document.querySelectorAll('.navbar li a').forEach(link => {
+    link.addEventListener('click', () => {
+      const navLinks = document.querySelector('.navbar ul');
+      navLinks.classList.remove('show');
+    });
+  });
+
   
   
 

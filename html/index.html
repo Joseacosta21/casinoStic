@@ -14,11 +14,11 @@
   </head>
   <body style="margin-top: 0px">
     <header>
-      <div
+      <nav
         class="navbar"
+        id="navbar"
         style="
           mix-blend-mode: difference;
-          position: fixed;
           background-color: transparent;
           box-shadow: none;
         "
@@ -34,13 +34,28 @@
             >
           </div>
         </div>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="contactanos.html">Contactanos</a></li>
-          <li><a href="nosotros.html">Sobre Nosotros</a></li>
-          <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
-        </ul>
-      </div>
+
+        <!-- Navbar burger -->
+
+        <button class="burger-menu" onclick="toggleMenu()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <!-- Container for the ils -->
+
+        <div class="nav-links-container">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contactanos.html">Contactanos</a></li>
+            <li><a href="nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <script src="../js/script.js"></script>
     </header>
 
     <div class="video-header">
