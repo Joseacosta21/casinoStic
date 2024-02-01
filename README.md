@@ -1,3 +1,5 @@
+Status: Online
+
 Basic Landing page made using HTML, CSS and JS
 
 Webpage: casinostic.com
