@@ -105,13 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Weird thing
     // navbar.style.position = (navbar.style.position === 'fixed') ? 'absolute' : 'fixed';
 
-
-    // Check the current mix blend mode and toggle it
-    navbar.style.mixBlendMode = (navbar.style.mixBlendMode === 'normal') ? 'inherit' : 'normal';
-
-    // Check the current background color and toggle it
-    navbar.style.backgroundColor = (navbar.style.backgroundColor === 'rgba(0, 0, 0, 0.7)') ? 'inherit' : 'rgba(0, 0, 0, 0.7)';
-
+    navbar.classList.toggle('menu-open');
  }
   
   // Close the menu when a link is clicked (optional)
