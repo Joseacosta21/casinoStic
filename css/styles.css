@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Helvetica, Arial, sans-serif; /* Set the font family to Helvetica for the entire webpage */
+  font-family: "Inter", sans-serif; /* Set the font family to Helvetica for the entire webpage */
 }
 
 h1 {
