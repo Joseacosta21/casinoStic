@@ -101,14 +101,22 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinks.classList.toggle('show');
 
     const navbar = document.querySelector('.navbar');
+    const siteWrapper = document.querySelector('.site-wrapper');
 
     // Weird thing
     // navbar.style.position = (navbar.style.position === 'fixed') ? 'absolute' : 'fixed';
 
     navbar.classList.toggle('menu-open');
+    siteWrapper.classList.toggle('menu-open');
+
+
  }
   
+  // OR when the screen goes back to big 
+  // TODO 
   // Close the menu when a link is clicked (optional)
+
+  
   document.querySelectorAll('.navbar li a').forEach(link => {
     link.addEventListener('click', () => {
       const navLinks = document.querySelector('.navbar ul');

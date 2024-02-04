@@ -18,19 +18,40 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
+      <nav class="navbar" id="navbar">
         <div>
           <div class="navbar-brand"><a href="index.html">CASINO STIC</a></div>
-          <div class="navbar-subtext">S.L.P., Mexico</div>
+          <div class="navbar-subtext">
+            <a
+              class="map-link"
+              href="https://maps.app.goo.gl/ZTkfMQUEyJuGwqdH8"
+              target="_blank"
+              >S.L.P., Mexico</a
+            >
+          </div>
         </div>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="eventos.html">Eventos y Torneos</a></li>
-          <li><a href="contactanos.html">Contactanos</a></li>
-          <li><a href="nosotros.html">Sobre Nosotros</a></li>
-          <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
-        </ul>
+
+        <!-- Navbar burger -->
+
+        <button class="burger-menu" onclick="toggleMenu()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <!-- Container for the ils -->
+
+        <div class="nav-links-container">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contactanos.html">Contactanos</a></li>
+            <li><a href="nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+          </ul>
+        </div>
       </nav>
+
+      <script src="../js/script.js"></script>
     </header>
 
     <main id="main-container">

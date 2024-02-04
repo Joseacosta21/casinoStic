@@ -77,6 +77,10 @@ a:hover {
   text-align: center;
 }
 
+.site-wrapper {
+  z-index: 90;
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
   display: none;
@@ -88,6 +92,7 @@ hr {
 
 iframe {
   border-radius: 2rem;
+  z-index: -1;
 }
 
 .logo {
@@ -108,7 +113,7 @@ iframe {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 3;
+  z-index: 90;
   /* background-color: black; */
   background-color: transparent;
   /* TODO previous navbar */
@@ -192,14 +197,17 @@ iframe {
 }
 
 .navbar.menu-open {
-  padding-top: 0px;
   mix-blend-mode: normal;
+}
+
+.site-wrapper.menu-open {
   background-color: rgba(0, 0, 0, 0.7);
-  min-height: 20rem;
+  z-index: 99;
 }
 
 .nav-links-container.menu-open {
   background-color: rgba(0, 0, 0, 0.7);
+  z-index: 90;
 }
 
 /* Footer */
@@ -303,7 +311,7 @@ footer {
   position: relative;
   text-align: center; /* Align the overlay text to the center */
   color: white; /* Set initial color to white */
-  z-index: 2;
+  z-index: -1;
 }
 
 .text-overlay h1 {
@@ -320,12 +328,14 @@ footer {
   padding: 1rem;
   font-weight: bold;
   line-height: 1.2;
+  z-index:-3;
 }
 
 .list_desc {
   font-size: 200%;
   padding-left: 4rem;
   padding-top: 1rem;
+  z-index: -3;
 }
 
 .map-container {
