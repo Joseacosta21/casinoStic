@@ -114,12 +114,12 @@ iframe {
   justify-content: space-between;
   align-items: center;
   z-index: 90;
-  /* background-color: black; */
-  background-color: transparent;
+  background-color: black;
+  /* background-color: transparent;*/
   /* TODO previous navbar */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow */
   /* Index box shadow: none */
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
 }
 
 .navbar-brand {
@@ -328,7 +328,7 @@ footer {
   padding: 1rem;
   font-weight: bold;
   line-height: 1.2;
-  z-index:-3;
+  z-index: -3;
 }
 
 .list_desc {
